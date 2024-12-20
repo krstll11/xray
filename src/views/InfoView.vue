@@ -120,10 +120,10 @@
         pages.push(i);
       }
 
-      // Добавляем последнюю страницу, если она не в видимой зоне
+      
       if (this.currentPage < this.totalPages - range) {
         if (this.currentPage < this.totalPages - range - 1) {
-          pages.push("..."); // Указатель на пропущенные страницы
+          pages.push("..."); 
         }
         pages.push(this.totalPages);
       }

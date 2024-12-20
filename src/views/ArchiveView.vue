@@ -61,7 +61,7 @@ export default {
     },
   },
   created() {
-    // Инициализация списка выпусков
+    
     for (let i = 1; i <= 48; i++) {
       this.issues.push({
         id: i,
@@ -69,12 +69,12 @@ export default {
         image: this.getRandomImage(),
       });
     }
-    // Установка количества элементов на странице
+    
     this.updateIssuesPerPage();
     window.addEventListener("resize", this.updateIssuesPerPage);
   },
   beforeDestroy() {
-    // Удаление обработчика resize
+    
     window.removeEventListener("resize", this.updateIssuesPerPage);
   },
   methods: {
